@@ -1,0 +1,50 @@
+<div class="main-projects__box">
+  <ul class="projects-box">
+    <li
+      (mousemove)="callbackHover($event)"
+      (mouseleave)="callbackOut($event)"
+      class="project-box"
+    >
+      <div class="project-photo__box" [ngStyle]="{ order: mainObj.id }">
+        <img src="{{ mainObj.photoUrl }}" alt="site image" />
+      </div>
+      <article>
+        <h2 class="project-title">
+          {{ mainObj.titles[0] }}<span>{{ mainObj.titles[1] }}</span>
+        </h2>
+        <ul class="project-langs">
+          <li *ngFor="let recourse of mainObj.usedRecourses">{{ recourse }}</li>
+        </ul>
+        <p>
+          {{ mainObj.description }}
+        </p>
+        <div class="project-btns__box">
+          <a
+            title="live-link"
+            *ngIf="mainObj.mySite"
+            target="_blank"
+            rel="noopener"
+            href="{{ mainObj.webUrl }}"
+            >LIVE</a
+          >
+          <a
+            title="live-link"
+            *ngIf="!mainObj.mySite"
+            target="_blank"
+            rel="noopener"
+            href="{{ mainObj.webUrl }}"
+            >GITHUB</a
+          >
+          <a
+            title="code-link"
+            *ngIf="mainObj.mySite"
+            target="_blank"
+            rel="noopener"
+            href="{{ mainObj.githubUrl }}"
+            >CODE</a
+          >
+        </div>
+      </article>
+    </li>
+  </ul>
+</div>

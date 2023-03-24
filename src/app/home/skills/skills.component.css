@@ -1,0 +1,46 @@
+.skills-logos {
+  padding-top: 5rem;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.skills-logos li img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.skills-logos li {
+  position: relative;
+  cursor: pointer;
+}
+.skills-logos__anim {
+  animation: onload-icon__skills 1s 1 backwards;
+}
+li[doeswork]:hover::after {
+  padding: 0.3rem 0.8rem;
+  border-radius: 2rem;
+  width: 5.1rem;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #222;
+  color: #fff;
+  transform: translateX(-22%);
+  content: attr(doeswork);
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+.angular-logo {
+  transform: scale(1.5);
+  filter: grayscale(1);
+}
+@keyframes onload-icon__skills {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

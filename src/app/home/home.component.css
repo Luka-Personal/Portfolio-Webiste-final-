@@ -1,0 +1,52 @@
+.container-introduction {
+  padding: 13rem 0 15rem 0;
+  /* this may break responsive */
+  display: flex;
+  height: 100vh;
+  height: 100svh;
+  flex-direction: column;
+  align-items: center;
+}
+.container-skills::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(src/assets/images/skillsBackground.svg);
+  filter: brightness(var(--bg-skills__brightness));
+}
+.container-skills {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 9.6rem;
+}
+/* queries */
+@media (max-width: 58.75em) {
+  html {
+    font-size: 55%;
+  }
+  .container-introduction {
+    padding: 13rem 2rem 15rem;
+  }
+}
+@media (max-width: 44.375em) {
+  .container-introduction {
+    padding: 13rem 2rem 10rem;
+  }
+  .hero-card {
+    flex-direction: column-reverse;
+    border-radius: 1rem !important;
+    padding: 2rem;
+    gap: 4rem;
+    background-image: red;
+  }
+}
+@media (max-width: 44.375em) {
+  .container-skills {
+    padding: 7rem 5.5rem;
+  }
+}

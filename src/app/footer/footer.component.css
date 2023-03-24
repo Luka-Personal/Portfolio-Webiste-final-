@@ -1,0 +1,25 @@
+.main-title.footer span {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.main-title.footer span ion-icon {
+  color: red;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.main-title.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+.page-footer__container {
+  padding: 4rem 4rem 1.5rem 4rem;
+}
+.page-footer {
+  position: relative;
+}
+.main-title__p {
+  padding-bottom: 5rem;
+}

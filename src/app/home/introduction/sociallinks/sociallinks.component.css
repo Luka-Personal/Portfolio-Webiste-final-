@@ -1,0 +1,22 @@
+.social-links__box {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+.social-links__box a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.social-links__box a:link,
+.social-links__box a:visited {
+  cursor: pointer;
+  filter: saturate(0) contrast(var(--social-links__contrast));
+  transition: filter 0.2s ease-in-out;
+}
+.social-links__box a:hover,
+.social-links__box a:active {
+  filter: saturate(1) contrast(1);
+}

@@ -1,0 +1,23 @@
+<div class="main-skills__box">
+  <h1 class="main-title">Familiar With</h1>
+  <ul class="skills-logos">
+    <li
+      class="skills-logos__anim"
+      *ngFor="let skill of skillsArray; let i = index"
+      [ngStyle]="{ 'animation-delay': 0.2 * i + 's' }"
+      [attr.doeswork]="skill"
+    >
+      <img
+        *ngIf="skill !== 'Angular'"
+        [src]="'assets/images/' + skill + '.svg'"
+        alt="html logo"
+      />
+      <img
+        *ngIf="skill === 'Angular'"
+        [src]="'assets/images/' + skill + '.png'"
+        alt="html logo"
+        class="angular-logo"
+      />
+    </li>
+  </ul>
+</div>
