@@ -27,6 +27,17 @@ export class ProjectsService {
     },
     {
       id: 0,
+      webUrl: 'https://europebet.netlify.app',
+      photoUrl: 'assets/images/europe.png',
+      githubUrl: 'https://github.com/Luka-Personal/Level-Up-Internship-Site',
+      usedRecourses: ['TypeScript', 'HTML5', 'CSS', 'Angular'],
+      titles: ['europe', '.bet'],
+      description:
+        'Welcome to EuropeBet Casino - the ultimate destination for thrilling entertainment and unforgettable gambling experiences! We are currently seeking talented web developers, join our team and contribute to our site.',
+      mySite: true,
+    },
+    {
+      id: 1,
       webUrl: 'https://tic-game-toe.netlify.app/',
       photoUrl: 'assets/images/ticTac.jpeg',
       githubUrl: 'https://github.com/Luka-Personal/Tic-tac-toe--game',
@@ -36,7 +47,7 @@ export class ProjectsService {
       mySite: true,
     },
     {
-      id: 1,
+      id: 0,
       webUrl: 'https://github.com/Luka-Personal',
       photoUrl: 'assets/images/github.jpeg',
       githubUrl: '',

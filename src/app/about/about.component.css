@@ -48,6 +48,51 @@
 .article-part__blue {
   color: rgb(59 130 246);
 }
+article {
+  padding-bottom: 4rem;
+}
+label {
+  text-align: start;
+  padding-bottom: 0.2rem;
+}
+form {
+  padding: 2rem 2rem 0 2rem;
+}
+input {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+textarea {
+  border: none;
+  border-radius: 0.2rem;
+}
+form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 35rem;
+}
+button {
+  border: none;
+  font-size: 2rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 1px solid #d4d4d8;
+  display: flex;
+  margin: 2rem auto 0;
+  gap: 0.5rem;
+  align-items: center;
+  transition: all 0.3s;
+}
+button:hover {
+  background-color: #d4d4d8;
+  gap: 1rem;
+}
 /* queries */
 @media (max-width: 44.375em) {
   .detailed-introduction__container {

@@ -21,5 +21,23 @@
   position: relative;
 }
 .main-title__p {
+  padding-bottom: 2rem;
+}
+/* v */
+.map-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  height: 400px;
+  padding: 0 0.5rem;
   padding-bottom: 5rem;
+}
+
+.map-frame {
+  border: 2px solid black;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
 }

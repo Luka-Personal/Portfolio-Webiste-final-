@@ -17,6 +17,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+*:focus {
+  box-shadow: 0 0 8px 5px rgba(41, 41, 66, 0.12);
+  outline: none;
+}
 html {
   font-size: 62.5%;
 }
@@ -62,20 +66,18 @@ body {
 }
 
 /* 710px */
-/* @media (max-width: 44.375em) {
-  nav a img {
-    width: 3.2rem;
-    height: 3.2rem;
+@media (max-width: 44.375em) {
+  .map-container {
+    height: 330px !important;
   }
-  menu svg {
-    width: 3.2rem;
-    height: 3.2rem;
-  }
-} */
+}
 /* 380px */
 @media (max-width: 23.75em) {
   html {
     font-size: 47%;
+  }
+  .map-container {
+    height: 200px !important;
   }
 }
 /* 250px */
