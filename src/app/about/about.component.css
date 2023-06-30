@@ -96,7 +96,7 @@ button:hover {
 /* queries */
 @media (max-width: 44.375em) {
   .detailed-introduction__container {
-    padding: 6.4rem 0;
+    padding: 8rem 0;
   }
 }
 @media (max-width: 23.75em) {
